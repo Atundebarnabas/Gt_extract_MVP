@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Jost&family=Poppins:wght@400;500;600;900&display=swap');
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+iframe {
+      height: 100vh;
+      width: 100%;
+      border: none;
+      outline: none;
+      overflow: hidden;
+}
+
+body {
+      background: rgba(0, 0, 0, 0.5);
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(30px);
+}
+
+.modal {
+      height: auto;
+      width: 96%;
+      background: #FFFFFF;
+      position: fixed;
+      padding: 38px 8px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.modal main {
+      height: auto;
+      width: 100%;
+      padding: 0px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.modal main .just_note {
+      height: auto;
+      width: 100%;
+      font-size: 1.2rem;
+      text-align: center;
+      font-family: 'poppins', sans-serif;
+      font-weight: 600;
+      color: darkslategrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.modal main .link_itself {
+      padding: 20px 0px;
+      height: auto;
+      width: 100%;
+}
+
+.link_itself p {
+      width: auto;
+      /* background: red; */
+      font-size: 0.77rem;
+      color: red;
+      word-break: break-word;
+      font-family: 'poppins', sans-serif;
+      font-weight: 600;
+      text-align: center;
+}
+
+.modal main .copy_button {
+      height: auto;
+      width: 100%;
+      padding: 27px 0px 0px 0px;
+      /* background: green; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+}
+
+.copy_button button {
+      height: auto;
+      border: none;
+      outline: none;
+      cursor: pointer;
+}
+
+.copy_button button.copier {
+      background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+      color: white;
+      width: 40%;
+      padding: 14px 11px;
+      border-radius: 30px;
+}
+
+.copy_button button.copier p {
+      font-size: 0.85rem;
+      font-family: 'poppins', sans-serif;
+}
+
+.copy_button button.sharing {
+      width: 40%;
+      padding: 2px 0px;
+      border-radius: 30px;
+      background: #000000;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+
+.copy_button button.sharing .iconvg {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.copy_button button.sharing .iconvg svg {
+      height: 65%;
+      width: 65%;
+      stroke: white;
+      stroke-width: 2.4;
+}
+
+.copy_button button.sharing p {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+}
+
+@media (min-width: 465px)
+{
+      .modal {
+            width: 500px;
+            padding: 40px 15px;
+            border-radius: 20px;
+      }
+      .modal main .link_itself {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+      .link_itself p {
+            text-align: center;
+            font-size: 1.03rem;
+      }
+      .modal main .copy_button {
+            flex-direction: column;
+            gap: 10px;
+      }
+      .copy_button button {
+            height: auto;
+            width: 40%;
+      }
+}

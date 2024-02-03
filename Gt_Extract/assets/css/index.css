@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Jost&family=Poppins:wght@400;500;600;900&display=swap');
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(85deg, rgba(239 239 239), rgba(255, 255, 255, .30));
+      font-family: 'poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+main {
+      height: auto;
+      width: 100%;
+      /* background: red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+main .img_spin {
+      height: auto;
+      width: 96%;
+      padding: 16px 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.img_spin img {
+      border-radius: 15px;
+      height: auto;
+      width: 100%;
+}
+
+main .all_text {
+      height: auto;
+      width: 100%;
+      padding: 42px 10px 0px;
+}
+
+.all_text p  {
+      font-size: 1rem;
+      font-weight: 600;
+      color: darkslategrey;
+      text-align: center;
+}
+
+.all_text p.h_text {
+      font-size: 1.4rem;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 10px;
+}
+
+main .c_btn {
+	width: 60%;
+	height: auto;
+	/* background: green; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0px 0px 0px;
+}
+
+.c_btn button {
+	height: auto;
+	padding: 15px 10px;
+	width: 230px;
+	border-radius: 30px;
+	outline: none;
+	border: none;
+      background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	color: white;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+      transition: box-shadow 1.2s ease-in-out;
+}
+
+.c_btn button:hover {
+      box-shadow: 0px 2px 40px rgba(8 8 8 / 12%);
+}
+
+@media (min-width: 465px)
+{
+      main .img_spin {
+            height: auto;
+            width: 430px;
+      }
+			main .all_text {
+				width: 60%;
+		  }
+			.all_text p.h_text {
+				font-size: 2rem;
+				margin-bottom: 21px;
+		  }
+		 .all_text p {
+				font-size: 1.2rem;
+		  }
+}

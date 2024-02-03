@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Jost&family=Poppins:wght@400;500;600;900&display=swap');
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      height: 100vh;
+      min-height: 100vh;
+      width: 100%;
+      background: linear-gradient(45deg, rgba(255, 255, 255), rgb(242, 112, 156, 0.23));
+      background-size: auto 200%;
+      background-position: 0 100%;
+      animation: animebg 25s linear infinite forwards;
+      font-family: 'poppins', sans-serif;
+      transition: background 5s ease;
+      background-attachment: fixed;
+}
+
+@keyframes animebg {
+      0% {
+            background: linear-gradient(45deg, rgba(255, 255, 255), rgb(242, 112, 156, 0.33), rgb(239, 239, 239));
+            background-position: 0% 50%;
+      }
+      50% {
+            background: linear-gradient(-45deg, rgba(255, 255, 255), rgb(242, 112, 156, 0.33), rgb(239, 239, 239));
+            background-position: 0% 0%;
+      }
+      100%{
+            background: linear-gradient(45deg, rgba(255, 255, 255),rgb(255, 148, 114, 0.23), rgb(239, 239, 239));
+            background-position: 100% 0%;
+      }
+}
+
+.wrapper {
+      height: auto;
+      width: 100%;
+      padding: 0px 7px;
+}
+
+header {
+      height: auto;
+      /* background: red; */
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+header .note_title {
+      width: 90%;
+      background: rgba(255, 255, 255, .30);
+      border-radius: 20px;
+      padding: 13px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(30px);
+}
+
+.note_title p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+      font-family: 'poppins', sans-serif;
+      color: #444;
+      font-size: 1.05rem;
+      width: auto;
+}
+
+main {
+      background: rgba(255, 255, 255, .30);
+      backdrop-filter: blur(30px);
+      /* padding: 220px; */
+      border-radius: 20px;
+      height: auto;
+      width: 100%;
+}
+
+main .main-note {
+      height: auto;
+      width: 100%;
+      padding: 21px 14px 21px 20px;
+}
+
+.main-note span {
+      color: #444;
+      font-weight: 400;
+      font-size: 1.24rem;
+      letter-spacing: 1.2px;
+      word-break: break-word;
+}
+
+.main-note span p {
+      font-size: 1.16rem;
+      line-height: 1.5;
+      margin: 14px 0px;
+      white-space: pre-line;
+}
+
+.main-note span .from {
+      font-weight: 600;
+      color: dimgrey;
+      border-bottom: 1px solid dimgrey;
+      width: fit-content;
+}
+
+footer {
+      height: auto;
+      width: 100%;
+      /* background: red; */
+      padding: 30px;
+}
+
+footer .h {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+}
+
+footer .h p {
+      color: dimgrey;
+      font-size: 1.04rem;
+      font-weight: 600;
+      display: flex;
+      gap: 11px;
+      font-style: italic;
+}
+
+footer .h p span {
+      font-weight: 500;
+      border-bottom: none;
+      background: #222;
+      padding: 0px 11px;
+      border-radius: 70px/100% 0px 100px 210px;
+      backdrop-filter: blur(180px);
+      color: white;
+      font-style: normal;
+      border: 2px solid white;
+}
+
+footer .f {
+      height: auto;
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+footer .f p {
+      color: #666;
+      font-weight: 600;
+      font-family: 'poppins', sans-serif;
+      font-size: 1.2rem;
+      border-bottom: 1px solid grey;
+}
+
+@media (max-width: 500px)
+{
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (min-width: 465px)
+{
+      body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+      }
+      .wrapper {
+            width: 500px;
+      }
+}

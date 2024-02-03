@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Jost&family=Poppins:wght@400;500;600;900&display=swap');
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(85deg, rgba(239 239 239), rgba(255, 255, 255, .30));
+      font-family: 'poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+main {
+      height: auto;
+      width: 100%;
+      /* background: red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+main .img_spin {
+      height: auto;
+      width: 85%;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.img_spin img {
+      height: auto;
+      width: 100%;
+}
+
+main .all_text {
+      height: auto;
+      width: 100%;
+      padding: 15px 20px;
+}
+
+.all_text p  {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #000;
+      text-align: center;
+}
+
+@media (min-width: 465px)
+{
+      main .img_spin {
+            height: auto;
+            width: 300px;
+      }
+}

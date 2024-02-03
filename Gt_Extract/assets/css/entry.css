@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Jost&family=Poppins:wght@400;500;600;900&display=swap');
+* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+}
+body {
+		font-family: 'poppins', sans-serif;
+		height: 100vh;
+		width: 100%;
+		background: linear-gradient(45deg, #eee, #ddd);
+		background-attachment: fixed;
+		background-blend-mode: luminosity;
+}
+
+.wrapper {
+		height: auto;
+		width: 100%;
+		padding: 20px 6px;
+}
+
+.wrapper .head {
+	height: auto;
+	width: 100%;
+	/* background: red; */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid lightgrey;
+}
+
+.head .page_info {
+	height: auto;
+	padding: 5px 4px;
+	width: 16%;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+	/* border: 1px solid #FFF; */
+	background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+
+.page_info p {
+	color: white;
+	font-weight: 600;
+}
+
+.head .page_title {
+	height: auto;
+	width: 50%;
+	background: rgba(255, 255, 255, .30);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+	border-radius: 23px;
+	padding: 2px;
+	border: 1px solid white;
+}
+
+.page_title p {
+	font-weight: 500;
+	font-size: clamp(1.1rem, 1vw, 2rem);
+	background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.head .icon {
+	width: 20%;
+	/* background: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.icon .vg {
+	height: auto;
+	width: 30px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .20);
+	padding: 20px;
+	border: 1px solid white;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.vg svg {
+	height: 65%;
+	width: 65%;
+	position: absolute;
+	stroke: dimgray;
+	stroke-width: 2;
+}
+
+
+/* body */
+.wrapper .body {
+	height: auto;
+	width: 100%;
+	/* background: red; */
+}
+
+.body form {
+	height: auto;
+	width: 100%;
+	padding: 20px 10px;
+}
+
+form .form_step {
+	height: auto;
+	width: 100%;
+	/* background: green; */
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form .form_step.active {
+	display: flex;
+}
+
+.form_step .input_description {
+	height: auto;
+	width: 100%;
+	/* background: red; */
+	padding: 120px 0px 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input_description p {
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: dimgray;
+}
+
+.input_description p span {
+	background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.form_step .input_box {
+	height: 65px;
+	width: 100%;
+	/* background: greenyellow; */
+}
+
+.input_box input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
+	color: dimgray;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	padding: 3px 55px;
+	border-radius: 13px;
+	background: rgba(255, 255, 255, .50);
+	transition: box-shadow 0.8s ease-in-out;
+}
+
+.form_step .textareaing {
+	height: auto;
+	min-height: auto;
+	max-height: 360px;
+}
+
+.textareaing textarea {
+	height: auto;
+	width: 100%;
+	background: rgba(255, 255, 255, .50);
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	padding: 23px 20px 4px;
+	font-size: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+	color: dimgray;
+	max-height: 100%;
+	min-height: auto;
+	resize: none;
+}
+
+.input_box > input:focus,
+textarea:focus
+{
+	box-shadow: 0px 2px 40px rgba(242 112 156 / 30%);
+}
+
+
+/* body -foot */
+
+.wrapper .body .foot {
+	height: auto;
+	width: 100%;
+	/* background: pink; */
+	padding: 40px 10px;
+}
+
+.foot .buttons_to_prev {
+	display: flex;
+	height: auto;
+	width: 100%;
+	/* background: green; */
+	justify-content: center;
+	gap: 30px;
+}
+
+.buttons_to_prev .btn_onThego {
+	height: 45px;
+	width: 40%;
+	/* background: red; */
+}
+
+.foot .first .btn_onThego {
+	width: 60%;
+}
+
+.btn_onThego button {
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	font-size: 1.04rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.btn_onThego .nextBtn {
+	color: white;
+	background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	transition: background 1s ease-in-out;
+}
+
+.btn_onThego .prevBtn{
+	color: dimgrey;
+	background: rgba(239 239 239);
+	border: 1px solid #bbb;
+}
+
+.btn_onThego .nextBtn.disabled {
+	background: #d3d3d3;
+	color: darkgrey;
+	cursor: not-allowed;
+}
+
+.IDecriptanime {
+	animation: fadein 1s ease-in-out forwards;
+}
+
+.IBoxanime {
+	animation: fadein 1.4s ease-in-out forwards alternate;
+}
+
+.BNanime {
+	animation: fadein 1.8s ease-in-out forwards;
+}
+
+.BNanimes {
+	animation: fadein 2.2s ease-in-out forwards;
+}
+
+@keyframes fadein {
+	0%,50% {
+		opacity: 0;
+		transform: translateY(80px);
+	}
+	70% {
+		opacity: .6;
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+/* doneLoader */
+.done-loader {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(6px);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.done-loader .content_modal {
+	height: auto;
+	width: 95%;
+	background: #FFFFFF;
+	border-radius: 20px;
+	position: relative;
+	padding: 10px;
+}
+
+.content_modal .up {
+	height: auto;
+	padding: 0px;
+	/* background: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content_modal .up .loader_spin {
+	/* background: yellow; */
+	padding: 10px;
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+.loader_spin img{
+	height: auto;
+	width: 100%;
+}
+
+.content_modal .down {
+	height: auto;
+	padding: 10px 8px;
+	width: 100%;
+}
+
+.content_modal .down p{
+	font-size: 1.2rem;
+	text-align: center;
+	color: dimgray;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+.content_modal .foot {
+	height: auto;
+	/* position: absolute; */
+	bottom: 0;
+	width: 100%;
+	padding: 10px 13px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.content_modal .foot .encrypt_message {
+	height: auto;
+	width: 100%;
+}
+
+.encrypt_message p {
+	color: grey;
+	font-size: 0.78rem;
+	text-align: center;
+}
+
+.content_modal .foot .copyright {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright p {
+	color: dimgray;
+	font-size: 0.894rem;
+	font-weight: 600;
+}
+
+/* Error */
+.form_error_place {
+	padding: 14px 15px;
+	width: 100%;
+	height: auto;
+	background: #ff3333;
+	border-radius: 20px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.8s ease-in-out;
+}
+
+.form_error_place.active {
+	display: flex;
+	opacity: 1;
+}
+
+.form_error_place p {
+	text-align: center;
+	font-size: 0.89rem;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+@media (max-width: 480px) and (orientation: landscape)
+{
+		.content_modal .up .loader_spin {
+				width: 33% !important;
+		}
+		.done-loader .content_modal {
+			width: 65% !important;
+	}
+}
+
+@media (max-width: 1000px) and (orientation: landscape)
+{
+	.done-loader .content_modal {
+		width: 65% !important;
+	}
+	.content_modal .up .loader_spin {
+		width: 55%;
+	}
+	.content_modal .down p {
+    font-size: 1rem;
+	}
+	.encrypt_message p {
+    color: grey;
+    font-size: 0.58rem;
+	}
+	.copyright p {
+    color: dimgray;
+    font-size: 0.594rem;
+	}
+}
+
+
+@media (min-width: 465px)
+{
+      body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+      }
+      .wrapper {
+            width: 500px;
+      }
+			.form_step .input_box {
+						width: 80%;
+			}
+			.done-loader {
+						width: 500px;
+			}
+			.done-loader .content_modal {
+						width: 85%;
+			}
+
+			.done-loader .content_modal .foot {
+				 		position: relative;
+			}
+}
+
+
+@media (min-width: 600px)
+{
+	.input_description p {
+		font-size: 2rem;
+	}
+}
